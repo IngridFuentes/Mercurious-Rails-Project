@@ -1,0 +1,7 @@
+<h1>UserLanguages#index</h1>
+
+<% @user_language.name%>
+<br>
+<% @user_languages.each do |user_language| %>
+<%= user_language.fluent %>
+<%end%>

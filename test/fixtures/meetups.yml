@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  requester: one
+  class_name: 
+  acceptor: one
+  class_name: 
+
+two:
+  requester: two
+  class_name: 
+  acceptor: two
+  class_name: 

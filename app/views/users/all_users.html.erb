@@ -1,0 +1,18 @@
+<%@users.each do |user| %>
+
+<h1><%= link_to "#{user.name}", "/users/#{user.id}"%></h1>
+<br>
+<%=user.city%>
+<br>
+<%=user.gender%>
+<br>
+<%=user.age%>
+<br>
+<br>
+<%=button_to "Delete", {action: "delete", id: user.id}, method: :delete%>
+<br>
+<%=button_to "Edit", {action: "edit", id: user.id}, method: :get%>
+<br>
+<!-- <%=button_to "Add Language", {action: "add_languages", id: user.id}, method: :post%> -->
+<%= button_to "Add Language", "/languages/new", method: :get %>
+<% end %>

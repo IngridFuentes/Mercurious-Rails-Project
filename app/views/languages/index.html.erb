@@ -1,0 +1,10 @@
+<h1>Languages#index</h1>
+<%@languages.each do |language| %>
+
+<h1><%=language.language_name%></h1>
+<br>
+
+<%=button_to "Delete", {action: "delete", id: language.id}, method: :delete%>
+<% end %>
+
+

@@ -1,0 +1,12 @@
+<h1>Languages#new</h1>
+
+<%=form_for @language do |f|%>
+<%=f.label :language_name%>
+<%=f.text_field :language_name%>
+
+<br>
+<br>
+<h1><%=f.submit "Add new language"%></h1>
+
+
+<%end%>
